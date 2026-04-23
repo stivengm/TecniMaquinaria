@@ -137,6 +137,7 @@
             }
             .description_stats {
                 font-size: 15px;
+                text-align: center;
                 margin: 0;
                 color: var(--primaryColor);
                 text-transform: uppercase;
@@ -176,6 +177,50 @@
                 flex: 1;
                 display: flex;
                 gap: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .content_page {
+        .banner {
+            .actions_banner {
+                flex-direction: column;
+            }
+        }
+        .technical_spects {
+            .content_technical_spects {
+                .section_technical_spects {
+                    flex-direction: column;
+                    .item_security_factory {
+                        img {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .content_stats {
+            gap: 10px;
+            .item_stats {
+                .value_stats {
+                    font-size: 30px;
+                }
+            }
+        }
+        .content_why_forms_with_us {
+            .content_register_user {
+                gap: 30px;
+                flex-direction: column;
+                padding: 15px 25px;
+                .actions_register_users {
+                    flex-direction: column;
+                    .btn {
+                        width: 100%;
+                    }
+                }
             }
         }
     }

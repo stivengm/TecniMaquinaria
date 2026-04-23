@@ -6,6 +6,11 @@
     align-items: center;
     padding: 0 5%;
     border-bottom: 4px solid var(--colorGray);
+    .icono_menu {
+        display: none;
+        width: 50px;
+        height: 50px;
+    }
     .title_app {
         margin: 0;
         text-transform: uppercase;
@@ -22,6 +27,18 @@
                 text-transform: uppercase;
                 color: var(--colorTextPrimary);
             }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        .icono_menu {
+            display: block !important;
+        }
+        .section_items_buttons {
+            display: none;
         }
     }
 }
