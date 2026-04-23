@@ -1,0 +1,13 @@
+<div class="navbar">
+    <h1 class="title_app">Instituto de maquinaria pesada</h1>
+    
+    <div class="section_items_buttons">
+        <div class="items_menu_options">
+            @for (itemMenu of optionsMenu; track $index) {
+                <span>{{ itemMenu.name }}</span>
+            }
+        </div>
+    
+        <button class="btn btn_primary">Acceso portal</button>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+.navbar {
+    background-color: var(--darkColor);
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    border-bottom: 4px solid var(--colorGray);
+    .title_app {
+        margin: 0;
+        text-transform: uppercase;
+        color: var(--textNavbarPrimary);
+    }
+    .section_items_buttons {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        .items_menu_options {
+            display: flex;
+            gap: 20px;
+            span {
+                text-transform: uppercase;
+                color: var(--colorTextPrimary);
+            }
+        }
+    }
+}

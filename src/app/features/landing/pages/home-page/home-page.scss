@@ -1,0 +1,182 @@
+.content_page {
+    .banner {
+        background-image: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0)), url(/images/banner.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: calc(100vh - 100px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 22px;
+        padding-left: 5%;
+        .section_technical_superior {
+            padding: 4px 16px 4px 16px;
+            background-color: var(--primaryColor);
+            width: max-content; 
+            .title_technical {
+                color: var(--colorTextSecondary);
+                font-weight: bold;
+                font-size: 12px;
+                margin: 0;
+            }
+        }
+        .title_banner {
+            text-transform: uppercase;
+            font-size: 48px;
+            font-weight: bold;
+            color: var(--colorWhite);
+            margin: 0;
+            span {
+                color: var(--primaryColor);
+            }
+        }
+        .text_description_banner {
+            width: 50%;
+            margin: 0;
+            color: var(--colorTextGray);
+        }
+        .actions_banner {
+            display: flex;
+            gap: 20px;
+        }
+    }
+    .technical_spects {
+        padding: 70px 5%;
+        border-top: 4px solid var(--colorGray);
+        .section_header_technical_spects {
+            display: flex;
+            align-items: center;
+            .header_technical_spects {
+                .title_technical_spects {
+                    color: var(--colorWhite);
+                    font-size: 32px;
+                    font-weight: bold;
+                    margin: 0;
+                }
+                .description_technical_spects {
+                    margin: 0;
+                    color: var(--colorGray);
+                }
+            }
+            .divider_technical_spects {
+                border: none;
+                height: 2px;
+                background-color: var(--colorDiviers);
+                width: 50%;
+                margin: 20px auto;
+            }
+        }
+        .content_technical_spects {
+            display: flex;
+            flex-direction: column;
+            gap: 26px;
+            margin-top: 48px;
+            .section_technical_spects {
+                display: flex;
+                gap: 24px;
+                .item_technical_spects {
+                    border: 2px solid var(--colorTextPrimary);
+                    padding: 32px;
+                    .title_item_technical_spects {
+                        color: var(--colorWhite);
+                        font-weight: bold;
+                        font-size: 24px;
+                        text-transform: uppercase;
+                    }
+                    .description_item_technical_spects {
+                        color: var(--colorTextPrimary);
+                    }
+                }
+                .item_operation_retroexcavadoras, .item_security_factory {
+                    flex: 2;
+                    .card_open_inscription {
+    
+                    }
+                }
+                .item_mecanic_preventiv {
+                    height: max-content;
+                    background-color: var(--colorCardsTechnical);
+                }
+                .item_gruas_industriales {
+                    height: max-content;
+                    background-color: var(--colorCardsTechnical);
+                }
+                .item_security_factory {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0 !important;
+                    background-color: var(--darkColor);
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        padding: 32px;
+                    }
+                }
+            }
+        }
+    }
+    .content_stats {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        height: 150px;
+        background-color: var(--darkColor);
+        border-top: 4px solid var(--colorGray);
+        border-bottom: 4px solid var(--colorGray);
+        .item_stats {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .value_stats {
+                font-size: 48px;
+                margin: 0;
+                color: var(--colorWhite);
+            }
+            .description_stats {
+                font-size: 15px;
+                margin: 0;
+                color: var(--primaryColor);
+                text-transform: uppercase;
+            }
+        }
+    }
+    .content_why_forms_with_us {
+        padding: 80px 5%;
+        border-bottom: 4px solid var(--colorGray);
+        h2 {
+            text-transform: uppercase;
+            color: var(--colorWhite);
+        }
+
+
+
+
+        .content_register_user {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            padding: 20px 48px;
+            background-color: var(--primaryColor);
+            .section_more_info {
+                flex: 1;
+                .title_ready {
+                    font-size: 40px;
+                    font-weight: bold;
+                    color: var(--darkColor);
+                    margin: 0;
+                }
+                .description_more_info {
+                    color: var(--colorTextMoreInfo);
+                }
+            }
+            .actions_register_users {
+                flex: 1;
+                display: flex;
+                gap: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.footer {
+    background-color: var(--darkColor);
+    padding:  30px 5%;
+    .section_footer {
+        display: flex;
+        .description_footer {
+            flex: 1;
+            .title_web_footer {
+                text-transform: uppercase;
+                font-size: 20px;
+                font-weight: bold;
+                color: var(--textNavbarPrimary);
+            }
+            .description_web_footer {
+                font-size: 15px;
+                // font-weight: bold;
+                color: var(--colorTextFooter);
+            }
+        }
+        .mode_info_footer {
+            display: flex;
+            gap: 30px;
+            .navegation {
+                .title_navegation {
+                    text-transform: uppercase;
+                    color: var(--colorWhite);
+                }
+            }
+            .social_media {
+                .title_social_media {
+                    text-transform: uppercase;
+                    color: var(--colorWhite);
+                }
+            }
+        }
+    }
+    .footer_copyright {
+        .copyright {
+            font-size: 15px;
+            color: var(--colorTextFooter);
+        }
+    }
+}
