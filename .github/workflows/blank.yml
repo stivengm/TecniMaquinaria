@@ -36,7 +36,7 @@ jobs:
 
       # Build app to QA
       - name: Build app to release/QA
-        run: npm run build
+        run: npm run build -- --base-href=/TecniMaquinaria/
 
       # Deploy to GitHub Pages
       - name: Deploy to Pages
