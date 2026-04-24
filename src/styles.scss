@@ -17,6 +17,7 @@
     --colorTextMoreInfo: #27272A;
     --colorTextFooter: #475569;
     --colorCardsTechnical: #18181B;
+    --colorTransparent: rgba(0,0,0,0);
 }
 
 body {
@@ -52,7 +53,7 @@ body {
 }
 .btn_secondary {
     border: 2px solid var(--colorGray);
-    background-color: var(--colorWhite);
+    background-color: var(--colorTransparent);
     color: var(--colorGray);
 }
 .btn_tertiary {

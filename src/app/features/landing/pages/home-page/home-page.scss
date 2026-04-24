@@ -88,6 +88,15 @@
                         color: var(--colorTextPrimary);
                     }
                 }
+                .item_operation_retroexcavadoras {
+                    min-height: 500px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent), url(../../../../../assets/images/img_retroexcavadora.webp);
+                    background-position: center;
+                    background-size: cover;
+                }
                 .item_operation_retroexcavadoras, .item_security_factory {
                     flex: 2;
                     .card_open_inscription {
@@ -147,9 +156,59 @@
     .content_why_forms_with_us {
         padding: 80px 5%;
         border-bottom: 4px solid var(--colorGray);
-        h2 {
-            text-transform: uppercase;
-            color: var(--colorWhite);
+        
+        .section_why_forms_with_us {
+            display: flex;
+            gap: 50px;
+            margin-bottom: 80px;
+            align-items: center;
+            .section_left_information {
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                gap: 30px;
+                h2 {
+                    margin: 0;
+                    text-transform: uppercase;
+                    color: var(--colorWhite);
+                }
+                .item_left_information {
+                    display: flex;
+                    align-items: center;
+                    gap: 24px;
+                    .section_icon {
+                        border: 2px solid var(--colorTextPrimary);
+                        padding: 12px;
+                        height: max-content;
+                        img {
+                            width: 21px;
+                            fill: var(--primaryColor);
+                            filter: brightness(0) saturate(100%) 
+                                    invert(84%) sepia(63%) 
+                                    saturate(749%) hue-rotate(2deg);
+                        }
+                    }
+                    .section_information_left {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 7px;
+                        .title_information {
+                            font-size: 18px;
+                            font-weight: bold;
+                            color: var(--colorWhite);
+                            margin: 0;
+                        }
+                        .description_information {
+                            margin: 0;
+                            font-size: 16px;
+                            color: var(--colorTextGray);
+                        }
+                    }
+                }
+            }
+            img {
+                width: 30%;
+            }
         }
 
 
@@ -194,6 +253,10 @@
             .content_technical_spects {
                 .section_technical_spects {
                     flex-direction: column;
+                    .item_operation_retroexcavadoras {
+                        min-height: auto;
+                        background-image: none;
+                    }
                     .item_security_factory {
                         img {
                             display: none;
@@ -211,6 +274,15 @@
             }
         }
         .content_why_forms_with_us {
+            .section_why_forms_with_us {
+                flex-direction: column;
+                .section_left_information {
+                    width: 100%;
+                }
+                img {
+                    width: 100%;
+                }
+            }
             .content_register_user {
                 gap: 30px;
                 flex-direction: column;
