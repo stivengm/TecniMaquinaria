@@ -1,0 +1,73 @@
+.content_page_certificados {
+    padding: 20px 5%;
+    .section_information_consult_certificado {
+        display: flex;
+        gap: 30px;
+        .request_certificado {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .info_request_certificado {
+                display: flex;
+                flex-direction: column;
+                .title_technical_system {
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    color: var(--primaryColor);
+                }
+                .title_verification {
+                    font-size: 48px;
+                    margin: 0;
+                    color: var(--colorWhite);
+                }
+                .description_verification {
+                    color: var(--colorTextGray);
+                    
+                }
+            }
+            .section_request_certificado {
+                background-color: var(--colorCardsTechnical);
+                border: 2px solid var(--colorTextPrimary);
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                padding: 0 20px 0 0px;
+                &::before {
+                    content: "";
+                    width: 8px;
+                    height: 100%;
+                    background-color: var(--primaryColor);
+                }
+                .section_search_certified {
+                    width: 100%;
+                    padding: 8px 30px 10px 10px;
+                    clip-path: border-box;
+                    .title_id_certified {
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: var(--colorTextGray);
+                    }
+                    .input_search_certified {
+                        height: 65px;
+                        width: stretch;
+                        color: var(--colorWhite);
+                        font-size: 28px;
+                        outline: none;
+                        border: 1px solid var(--colorGray);
+                        padding-left: 20px;
+                        background-color: var(--backgroundColorApp);
+                    }
+                }
+            }
+        }
+        .banner_certificaciones {
+            width: 40%;
+            border: 2px solid var(--colorTextPrimary);
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
