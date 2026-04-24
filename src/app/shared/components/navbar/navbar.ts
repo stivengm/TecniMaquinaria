@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
 import { OptionsMenu } from '../../../core/models/options_menu.model';
+import { RouterLink, RouterLinkActive } from "@angular/router";
 
 @Component({
   selector: 'app-navbar',
-  imports: [],
+  imports: [
+    RouterLink,
+    RouterLinkActive
+  ],
   templateUrl: './navbar.html',
   styleUrl: './navbar.scss',
 })
@@ -18,7 +22,7 @@ export class NavbarComponent {
     {
       id: 2,
       name: "Certificados",
-      url: "/certificados"
+      url: "/certificados/consultar-certificado"
     },
     {
       id: 3,

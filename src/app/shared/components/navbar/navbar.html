@@ -7,7 +7,7 @@
     <div class="section_items_buttons">
         <div class="items_menu_options">
             @for (itemMenu of optionsMenu; track $index) {
-                <span>{{ itemMenu.name }}</span>
+                <span [routerLink]="itemMenu.url" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{ itemMenu.name }}</span>
             }
         </div>
     
