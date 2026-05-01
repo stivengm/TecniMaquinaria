@@ -1,5 +1,8 @@
 .content_page_certificados {
     padding: 20px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
     .section_information_consult_certificado {
         display: flex;
         gap: 30px;
@@ -67,6 +70,178 @@
             border: 2px solid var(--colorTextPrimary);
             img {
                 width: 100%;
+            }
+        }
+    }
+    .info_certificado {
+        background-color: var(--colorCardsTechnical);
+        border: 1px solid var(--colorTextTitleBeige);
+        padding: 48px 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .info_factory_status {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .section_info_factory {
+                display: flex;
+                flex-direction: column;
+                .datos_operador_title {
+                    text-transform: uppercase;
+                    color: var(--colorWhite);
+                    font-size: 24px;
+                    font-weight: bold;
+                    margin: 0;
+                }
+                .description_operador {
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    margin: 0;
+                    color: var(--colorTextTitleBeige);
+                }
+            }
+            .section_status {
+                padding: 10px 16px;
+                border: 1px solid var(--colorGreen);
+                width: max-content;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                background-color: #16a34a2d;
+                box-shadow: 1px 6px 20px -1px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 1px 6px 20px -1px rgba(0,0,0,0.75);
+                -moz-box-shadow: 1px 6px 20px -1px rgba(0,0,0,0.75);
+                .icon_check_status {
+                    width: 20px;
+                    height: 20px;
+                    filter: brightness(0) saturate(100%) invert(46%) sepia(79%) saturate(433%) hue-rotate(93deg) brightness(95%) contrast(92%);
+                }
+                span {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 16px;
+                    color: var(--colorGreen);
+                }
+            }
+        }
+        .section_information_person {
+            display: flex;
+            gap: 30px;
+            .item_info_person {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                .title_text_type {
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    margin: 0;
+                    color: var(--colorTextTitleBeige);
+                }
+                .value_text_person {
+                    text-transform: uppercase;
+                    margin: 0;
+                    color: var(--colorWhite);
+                }
+                .value_text_primary {
+                    text-transform: uppercase;
+                    margin: 0;
+                    color: var(--primaryColor);
+                }
+            }
+        }
+        hr {
+            width: 100%;
+        }
+        .section_information_date {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .information_dates {
+                display: flex;
+                gap: 30px;
+                .item_info_date {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    .title_text_dates {
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        margin: 0;
+                        color: var(--colorTextTitleBeige);
+                    }
+                    .value_dates {
+                        text-transform: uppercase;
+                        margin: 0;
+                        color: var(--colorWhite);
+                    }
+                }
+            }
+        }
+    }
+    .section_soporte {
+        display: flex;
+        gap: 40px;
+        .section_information_support {
+            flex: 1;
+            border: 2px solid var(--colorTextPrimary);
+            display: flex;
+            padding: 48px 52px;
+            gap: 40px;
+            align-items: center;
+            .section_icon_information {
+                width: 64px;
+                height: 64px;
+                min-width: 64px;
+                min-height: 64px;
+                background-color: var(--primaryColor);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .icon {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+            .information {
+                display: flex;
+                flex-direction: column;
+                gap: 7px;
+                .title_information {
+                    color: var(--colorWhite);
+                    margin: 0;
+                }
+                .description_information {
+                    color: var(--colorTextTitleBeige);
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .content_page_certificados {
+        .section_information_consult_certificado {
+            .request_certificado {
+                width: 100%;
+                .section_request_certificado {
+                    flex-direction: column;
+                    padding: 0;
+                    .section_search_certified {
+                        padding: 0px 5px 10px 10px;
+                    }
+                }
+            }
+            .banner_certificaciones {
+                display: none;
+            }
+        }
+        .section_soporte {
+            flex-direction: column;
+            .section_information_support {
+                padding: 30px 30px;
+
             }
         }
     }
