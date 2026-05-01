@@ -31,7 +31,7 @@ export class NavbarComponent {
     {
       id: 3,
       name: "Cursos",
-      url: "/cursos"
+      url: "/cursos/nuestros-cursos"
     },
     {
       id: 3,
