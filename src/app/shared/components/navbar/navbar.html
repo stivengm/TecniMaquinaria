@@ -1,8 +1,28 @@
 <div class="navbar">
 
-    <img src="assets/icons/menu.svg" alt="icono_menu" class="icono_menu">
+    <img src="assets/icons/menu.svg" alt="icono_menu" class="icono_menu" (click)="toggleMenu()">
+
+    @if (isMenuOpen) {
+        <div class="overlay" (click)="toggleMenu()"></div>
+    }
 
     <h1 class="title_app">Instituto de maquinaria pesada</h1>
+
+    <div class="mobile_sidebar" [ngClass]="{ 'open': isMenuOpen }">
+        <div class="header_menu_top">
+            <div class="menu_header">
+                <h2>Menú</h2>
+            </div>
+    
+            <div class="options_menu">
+                @for (itemMenu of optionsMenu; track $index) {
+                    <span [routerLink]="itemMenu.url" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="toggleMenu()">{{ itemMenu.name }}</span>
+                }
+            </div>
+        </div>
+
+        <button class="btn btn_primary">Acceso portal</button>
+    </div>
     
     <div class="section_items_buttons">
         <div class="items_menu_options">

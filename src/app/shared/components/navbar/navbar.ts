@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { OptionsMenu } from '../../../core/models/options_menu.model';
 import { RouterLink, RouterLinkActive } from "@angular/router";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
   imports: [
+    CommonModule,
     RouterLink,
     RouterLinkActive
   ],
@@ -12,6 +14,8 @@ import { RouterLink, RouterLinkActive } from "@angular/router";
   styleUrl: './navbar.scss',
 })
 export class NavbarComponent {
+
+  isMenuOpen = false;
 
   optionsMenu: OptionsMenu[] = [
     {
@@ -35,5 +39,9 @@ export class NavbarComponent {
       url: "/nosotros"
     }
   ];
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 
 }
