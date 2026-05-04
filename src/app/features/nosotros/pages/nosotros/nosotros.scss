@@ -1,0 +1,94 @@
+.content_page_nosotros {
+    .info_about_us {
+        padding: 85px 5%;
+        display: flex;
+        gap: 30px;
+        .section_vision {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            background-color: var(--colorCardsTechnical);
+            border: 1px solid var(--colorTextTitleBeige);
+            .title_vision {
+                color: var(--colorWhite);
+                text-transform: uppercase;
+                font-size: 32px;
+                font-weight: bold;
+                margin: 0;
+            }
+            .description_vision {
+                color: var(--colorWhite);
+                font-size: 16px;
+                margin: 0;
+            }
+        }
+        .section_mision {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            background-color: var(--primaryColor);
+            .title_mision {
+                text-transform: uppercase;
+                font-size: 32px;
+                font-weight: bold;
+                margin: 0;
+            }
+            .description_mision {
+                font-size: 16px;
+                margin: 0;
+            }
+        }
+    }
+    .section_plan_operations {
+        background-color: var(--darkColor);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+        padding: 80px 5%;
+        border-top: 4px solid var(--colorGray);
+        border-bottom: 4px solid var(--colorGray);
+        .title_section_plan_operations {
+            text-transform: uppercase;
+            font-size: 32px;
+            font-weight: bold;
+            margin: 0;
+            color: var(--colorWhite);
+            span {
+                padding-bottom: 5px;
+                border-bottom: 5px solid var(--primaryColor);
+            }
+        }
+        .items_plan_operations {
+            display: flex;
+            gap: 30px;
+            .item_plan_operations {
+                background-color: var(--colorCardsTechnical);
+                border: 1px solid var(--colorTextTitleBeige);
+                padding: 20px 25px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .img_item_operations {
+                    width: 35px;
+                    height: 35px;
+                    filter: brightness(0) saturate(100%) invert(84%) sepia(63%) saturate(749%) hue-rotate(2deg);
+                }
+                .title_item_operations {
+                    color: var(--colorWhite);
+                    text-transform: uppercase;
+                    font-size: 24px;
+                    margin: 0;
+                }
+                .description_item_operations {
+                    color: var(--colorTextTitleBeige);
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
