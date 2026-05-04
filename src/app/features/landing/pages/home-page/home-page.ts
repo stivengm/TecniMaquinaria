@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavbarComponent } from '../../../../shared/components/navbar/navbar';
 import { FooterComponent } from '../../../../shared/components/footer/footer';
-import { Router } from "@angular/router";
+import { DataAppServices } from '../../../../core/services/data-app';
 
 @Component({
   selector: 'app-home-page',
@@ -16,9 +16,11 @@ export class HomePageComponent {
 
   actualYear = new Date().getFullYear();
 
-  constructor(private router: Router) {}
+  constructor(
+    private dataApp: DataAppServices
+  ) {}
   
   goToPage(link: string) {
-    this.router.navigate([link]);
+    this.dataApp.goToLink(link);
   }
 }
