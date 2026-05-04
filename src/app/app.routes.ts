@@ -6,6 +6,10 @@ export const routes: Routes = [
         loadChildren: () => import('./features/landing/landing.routes').then(m => m.LANDING_ROUTES)
     },
     {
+        path: 'usuario',
+        loadChildren: () => import('./features/auth/auth.routes').then(m => m.AUTH_ROUTES)
+    },
+    {
         path: 'certificados',
         loadChildren: () => import('./features/certificados/pages/certificados.routes').then(m => m.CERTIFICADOS_ROUTES)
     },
@@ -17,10 +21,6 @@ export const routes: Routes = [
         path: 'nosotros',
         loadChildren: () => import('./features/nosotros/nosotros.routes').then(m => m.NOSOTROS_ROUTES)
     }
-    // {
-    //     path: 'auth',
-    //     loadChildren: () => import('./features/auth/auth.routes').then(m => m.AUTH_ROUTES)
-    // },
     // {
     //     path: 'admin',
     //     loadChildren: () => import('./features/admin/admin.routes').then(m => m.ADMIN_ROUTES)

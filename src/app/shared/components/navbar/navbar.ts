@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { OptionsMenu } from '../../../core/models/options_menu.model';
 import { RouterLink, RouterLinkActive } from "@angular/router";
 import { CommonModule } from '@angular/common';
+import { DataAppServices } from '../../../core/services/data-app';
 
 @Component({
   selector: 'app-navbar',
@@ -40,8 +41,16 @@ export class NavbarComponent {
     }
   ];
 
+  constructor(private dataApp: DataAppServices) {
+
+  }
+
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  goToPage(link: string) {
+    this.dataApp.goToLink(link)
   }
 
 }
