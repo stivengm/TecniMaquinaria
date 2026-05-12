@@ -1,0 +1,11 @@
+.menu {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    border-right: 4px solid var(--colorGray);
+    height: 100vh;
+    .items_options_menu {
+        display: flex;
+        flex-direction: column;
+    }
+}

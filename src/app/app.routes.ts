@@ -20,9 +20,9 @@ export const routes: Routes = [
     {
         path: 'nosotros',
         loadChildren: () => import('./features/nosotros/nosotros.routes').then(m => m.NOSOTROS_ROUTES)
+    },
+    {
+        path: 'admin',
+        loadChildren: () => import('./features/admin/admin.routes').then(m => m.ADMIN_ROUTES)
     }
-    // {
-    //     path: 'admin',
-    //     loadChildren: () => import('./features/admin/admin.routes').then(m => m.ADMIN_ROUTES)
-    // }
 ];
