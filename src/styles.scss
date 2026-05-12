@@ -64,3 +64,14 @@ body {
     background-color: var(--darkColor);
     color: var(--primaryColor);
 }
+
+
+input {
+    height: 65px;
+    width: -webkit-fill-available;
+    font-size: 28px;
+    outline: none;
+    padding-left: 20px;
+    width: stretch;
+    font-family: 'FontWeb', sans-serif;
+}
