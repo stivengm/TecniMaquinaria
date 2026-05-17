@@ -25,10 +25,35 @@
                 display: flex;
                 gap: 20px;
                 .item_information_dashboard {
+                    display: flex;
+                    flex-direction: column;
                     flex: 1;
                     padding: 24px;
+                    gap: 10px;
                     background-color: var(--colorCardsTechnical);
                     border: 1px solid var(--colorTextTitleBeige);
+                    .more_info {
+                        display: flex;
+                        justify-content: space-between;
+                        img {
+                            height: 25px;
+                        }
+                        .more_info_text {
+                            font-size: 12px;
+                            font-weight: 700;
+                            color: var(--colorGreen);
+                        }
+                        .more_info_text_primary {
+                            font-size: 12px;
+                            font-weight: 700;
+                            color: var(--primaryColor);
+                        }
+                        .more_info_text_red {
+                            font-size: 12px;
+                            font-weight: 700;
+                            color: var(--colorRed);
+                        }
+                    }
                     .label_item {
                         margin: 0;
                         font-size: 12px;
