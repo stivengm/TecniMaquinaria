@@ -1,10 +1,12 @@
 <div class="menu">
-    <h2>Instituto de Maquinaria Pesada</h2>
-
-    <div class="items_options_menu">
-        @for (itemMenu of optionsMenu; track $index) {
-            <div>{{ itemMenu.name }}</div>
-        }
+    <div class="header_menu">
+        <h2 class="title_menu">Instituto de <br><span>Maquinaria Pesada</span></h2>
+    
+        <div class="items_options_menu">
+            @for (itemMenu of optionsMenu; track $index) {
+                <div class="item_menu" [routerLink]="itemMenu.url" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{ itemMenu.name }}</div>
+            }
+        </div>
     </div>
 
     <button>Cerrar sesión</button>

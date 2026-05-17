@@ -2,10 +2,33 @@
     width: 280px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     border-right: 4px solid var(--colorGray);
     height: 100vh;
-    .items_options_menu {
-        display: flex;
-        flex-direction: column;
+    .header_menu {
+        .title_menu {
+            text-transform: uppercase;
+            color: var(--colorWhite);
+            font-size: 18px;
+            font-weight: 900;
+            span {
+                color: var(--primaryColor);
+            }
+        }
+        .items_options_menu {
+            display: flex;
+            flex-direction: column;
+            .item_menu {
+                padding: 17px 0 17px 16px;
+                color: var(--colorGray);
+                font-size: 14px;
+                font-weight: 700;
+            }
+            .active {
+                border-left: 8px solid var(--colorWhite);
+                color: var(--darkColor);
+                background-color: var(--primaryColor);
+            }
+        }
     }
 }

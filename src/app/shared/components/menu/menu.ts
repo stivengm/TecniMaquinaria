@@ -1,8 +1,14 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
-  imports: [],
+  imports: [
+    CommonModule,
+    RouterLink,
+    RouterLinkActive
+  ],
   templateUrl: './menu.html',
   styleUrl: './menu.scss',
 })
@@ -13,7 +19,7 @@ export class MenuComponent {
       id: 1,
       name: "Métricas",
       icon: "",
-      url: ""
+      url: "/admin/dashboard"
     },
     {
       id: 2,

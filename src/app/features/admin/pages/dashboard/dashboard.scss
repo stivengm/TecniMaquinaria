@@ -9,10 +9,14 @@
             gap: 40px;
             .section_header_dashboard {
                 .subtitle_resumen {
+                    font-size: 12px;
+                    margin: 0;
                     color: var(--primaryColor);
                     text-transform: uppercase;
                 }
                 .title_panel_central {
+                    font-size: 48px;
+                    margin: 0;
                     color: var(--colorWhite);
                     text-transform: uppercase;
                 }
@@ -52,7 +56,14 @@
                 }
             }
             .user_registered {
-
+                background-color: var(--colorCardsTechnical);
+                border: 1px solid var(--colorTextTitleBeige);
+                .header_user_registered {
+                    h3 {
+                        text-transform: uppercase;
+                        color: var(--colorWhite);
+                    }
+                }
             }
         }
     }
