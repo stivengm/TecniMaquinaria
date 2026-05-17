@@ -177,6 +177,8 @@
                     align-items: center;
                     gap: 24px;
                     .section_icon {
+                        display: flex;
+                        align-items: center;
                         border: 2px solid var(--colorTextPrimary);
                         padding: 12px;
                         height: max-content;
